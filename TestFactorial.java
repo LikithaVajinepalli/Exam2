@@ -1,4 +1,4 @@
-public class Testfactorial {
+class Testfactorial {
     public static void main(String[] args) {
         try {
             System.out.println("factorial(0) = " + Factorial.factorial(0));
