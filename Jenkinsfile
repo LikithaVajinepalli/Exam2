@@ -36,10 +36,10 @@ pipeline {
 
     post {
         success { 
-            echo 'Build succeeded - factorial.jar archived.' 
+            echo 'Build succeeded' 
         }
         failure { 
-            echo 'Build failed - check the console output.' 
+            echo 'Build failed' 
         }
     }
 }
