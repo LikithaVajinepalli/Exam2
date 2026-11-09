@@ -10,7 +10,6 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Compiling both Java files'
-                bat 'if not exist out mkdir out'
                 bat 'javac -d out Factorial.java TestFactorial.java'
             }
         }

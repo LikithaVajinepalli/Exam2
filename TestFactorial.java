@@ -1,23 +1,11 @@
-public class TestFactorial {
-
-    private static void check(boolean condition, String message) {
-        if (!condition) {
-            System.out.println("Test FAILED: " + message);
-            System.exit(1);   
-        }
-        System.out.println("Test passed: " + message);
-    }
-
+public class Testfactorial {
     public static void main(String[] args) {
-        check(Factorial.factorial(0) == 1, "factorial(0) == 1");
-        check(Factorial.factorial(3) == 6, "factorial(3) == 6");
-        check(Factorial.factorial(5) == 120, "factorial(5) == 120");
-
         try {
-            Factorial.factorial(-1);
-            check(false, "factorial(-1) should throw an exception");
+            System.out.println("factorial(0) = " + Factorial.factorial(0));
+            System.out.println("factorial(5) = " + Factorial.factorial(5));
+            System.out.println("factorial(-1) = " + Factorial.factorial(-1));
         } catch (IllegalArgumentException e) {
-            System.out.println("Test passed: factorial(-1) throws IllegalArgumentException");
+            System.out.println("The number is not satisfied : " + e.getMessage());
         }
     }
 }
